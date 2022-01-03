@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  transition: all 0.1s ease-in;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+  background-color: #3b3f45;
+}
+.container {
+  min-width: 1200px;
+}
+
+.header {
+  padding-top: 19px;
+  padding-bottom: 12px;
+  background: #4a4f56;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      margin-bottom: 4px;
+      font-weight: 700;
+      font-size: 24px;
+      color: #ff8984;
+    }
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      color: #ff8984;
+    }
+  }
+}
+
+.list {
+  padding: 20px 0 45px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    li {
+      padding: 11px;
+      width: 534px;
+      height: 45px;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ffffff;
+      background: #88839e;
+      border-top: 2px solid transparent; /* убираем скачки */
+      border-bottom: 2px transparent;
+      &:active {
+        background: #ff8984;
+      }
+      &:hover {
+        border: 2px solid white;
+      }
+      &:nth-child(2n + 1) {
+        background: #88839e;
+      }
+      &:nth-child(2n) {
+        background: #7a7593;
+      }
+      input:checked + label {
+        text-decoration: line-through;
+      }
+      small {
+        font-size: 11px;
+        vertical-align: 2px;
+        &::after {
+          content: ")";
+        }
+        &::before {
+          content: "(";
+        }
+      }
+    }
+  }
+}
+.wish {
+  margin-top: 45px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text p {
+      text-align: center;
+      width: 534px;
+      background: #4a4f56;
+      padding: 12px 0 12px 0;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ff8984;
+    }
+  }
+}

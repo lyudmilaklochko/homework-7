@@ -1,0 +1,143 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+  background-color: #3b3f45;
+}
+
+.container {
+  min-width: 1200px;
+}
+
+.header {
+  padding-top: 19px;
+  padding-bottom: 12px;
+  background: #4a4f56;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header h1 {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ff8984;
+}
+
+.header p {
+  font-weight: normal;
+  font-size: 16px;
+  color: #ff8984;
+}
+
+.list {
+  padding: 20px 0 45px;
+}
+
+.list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.list ul li {
+  padding: 11px;
+  width: 534px;
+  height: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  background: #88839e;
+  border-top: 2px solid transparent;
+  /* убираем скачки */
+  border-bottom: 2px transparent;
+}
+
+.list ul li:active {
+  background: #ff8984;
+}
+
+.list ul li:hover {
+  border: 2px solid white;
+}
+
+.list ul li:nth-child(2n + 1) {
+  background: #88839e;
+}
+
+.list ul li:nth-child(2n) {
+  background: #7a7593;
+}
+
+.list ul li input:checked + label {
+  text-decoration: line-through;
+}
+
+.list ul li small {
+  font-size: 11px;
+  vertical-align: 2px;
+}
+
+.list ul li small::after {
+  content: ")";
+}
+
+.list ul li small::before {
+  content: "(";
+}
+
+.wish {
+  margin-top: 45px;
+}
+
+.wish .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wish .container .text p {
+  text-align: center;
+  width: 534px;
+  background: #4a4f56;
+  padding: 12px 0 12px 0;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ff8984;
+}
+/*# sourceMappingURL=style.css.map */
